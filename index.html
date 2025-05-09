@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Climb Tycoon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div class="ui-overlay">
+            <div class="money-display">$1000</div>
+            <div class="business-panel">
+                <button class="business-btn" data-type="retail">Open Retail ($500)</button>
+                <button class="business-btn" data-type="manufacturing">Open Factory ($1000)</button>
+            </div>
+            <div class="upgrade-panel" style="display: none;">
+                <h3>Upgrades</h3>
+                <div class="upgrade-list"></div>
+                <button class="close-upgrades">Close</button>
+            </div>
+            <div class="leaderboard">
+                <h3>Top Players</h3>
+                <ol class="leaderboard-list"></ol>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
